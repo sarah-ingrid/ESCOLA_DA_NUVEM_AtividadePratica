@@ -1,0 +1,6 @@
+distancia = 300
+combustivel = 25
+
+print(f'Distância percorrida: {distancia} km\nCombustível gasto: {combustivel} litros\n')
+
+print(f'Consumo médio de combustível: {distancia / combustivel} km/l')

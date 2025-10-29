@@ -1,0 +1,12 @@
+produto = "Camiseta"
+
+preco = 50.00
+
+desconto = 20 # % 
+
+
+print(f'Produto: {produto}\nPreço da peça: R$ {preco}\nDesconto de {desconto}%\n')
+valor_desconto = preco * (desconto / 100)
+
+print(f'Valor do desconto: {valor_desconto}')
+print(f'Preço final: R$ {preco - valor_desconto}')

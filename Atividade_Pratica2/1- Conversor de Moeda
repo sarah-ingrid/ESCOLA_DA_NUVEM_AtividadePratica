@@ -1,1 +1,26 @@
+print('-' * 10, 'CONVERSOR DE MOEDA', '-' * 10, '\n\n')
 
+# pro usuário digitar o valor a ser convertido
+'''
+dolar = 5.60
+euro = 6.60 
+
+real = float(input('Digite o valor em real: '))
+
+op = int(input('Digite 1 para converter em dolar\nDigite 2 para converter em euro\n\n'))
+
+if op == 1:
+    print(f'REAL\tDÓLAR\n{real}\t{real / dolar:.2f}')
+elif op == 2:
+    print(f'REAL\tEURO\n{real}\t{real / euro:.2f}')
+else:
+    print('Opção inválida')
+'''
+
+# com os dados do exercício
+real = 100.00
+dolar = 5.60
+euro = 6.60 
+
+print(f'Valor em REAL: R$ {real}\n\nValor convertido em DÓLAR: US$ {real / dolar:.2f}')
+print(f'Valor convertido em EURO: € {real / euro:.2f}')
