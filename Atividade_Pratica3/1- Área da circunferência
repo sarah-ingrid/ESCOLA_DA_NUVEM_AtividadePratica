@@ -1,1 +1,6 @@
+pi = 3.14159265
+raio = float(input())
 
+
+area = pi * raio**2
+print(f'\nA= {area:.4f}')

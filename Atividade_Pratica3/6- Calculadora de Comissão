@@ -1,0 +1,9 @@
+vendedor = input('Digite o nome do vendedor: ')
+salario_fixo = float(input('Digite o salário fixo: '))
+vendas = float(input('Digite o total de vendas do mês: '))
+
+comissao = vendas * 0.15
+total_receber = salario_fixo + comissao
+
+print(f'\nVendedor: {vendedor}')
+print(f'Total a receber = R$ {total_receber:.2f}')

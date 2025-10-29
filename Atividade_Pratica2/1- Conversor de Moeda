@@ -1,4 +1,4 @@
-print('-' * 10, 'CONVERSOR DE MOEDA', '-' * 10, '\n\n')
+# print('-' * 10, 'CONVERSOR DE MOEDA', '-' * 10, '\n\n')
 
 # pro usuário digitar o valor a ser convertido
 '''
