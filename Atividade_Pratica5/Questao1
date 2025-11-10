@@ -1,1 +1,10 @@
+def calcular_gorjeta(valor_conta, porcentagem_gorjeta):
+    gorjeta = valor_conta * (porcentagem_gorjeta / 100)
+    return gorjeta
 
+
+
+# exemplo de uso:
+total = float(input("Digite o valor da conta: "))
+porcent = int(input("Digite a porcentagem: "))
+print(f"\nGorjeta a ser paga: R${calcular_gorjeta(total, porcent):.2f}")
