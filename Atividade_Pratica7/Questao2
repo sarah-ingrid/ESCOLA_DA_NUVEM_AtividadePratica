@@ -1,0 +1,31 @@
+import csv
+
+def criar_csv(caminho_arquivo):
+   with open(caminho_arquivo, mode='w', newline='', encoding='utf-8') as arquivo:
+        escritor = csv.writer(arquivo)
+        escritor.writerow(['Nome', 'Idade', 'Cidade'])
+
+        while True:
+            print("\nDigite os dados dos perfis ou 'x' para sair e criar o arquivo.")
+            nome = input("Nome: ")
+            if nome.lower() == 'x':
+                break
+
+            idade = input("Idade: ")
+            if idade.lower() == 'x':
+                break
+
+            cidade = input("Cidade: ")
+            if cidade.lower() == 'x':
+                break
+
+            escritor.writerow([nome, idade, cidade])
+            print("Dados adicionados!")
+
+        print(f"\nArquivo '{caminho_arquivo}' criado com sucesso!")
+
+
+
+
+##########################
+criar_csv('pessoas.csv')

@@ -1,0 +1,28 @@
+import statistics
+
+def tempo_execucao(caminho_arquivo):
+    tempos = []
+
+    with open(caminho_arquivo, 'r') as arquivo:
+        for linha in arquivo:
+            if "tempo:" in linha:
+                try:
+                    tempo = float(linha.split("tempo:")[1].strip())
+                    tempos.append(tempo)
+                except ValueError:
+                    pass 
+
+    if not tempos:
+        print("\nNenhum tempo de execução encontrado no arquivo.")
+        return
+
+    media = statistics.mean(tempos)
+    desvio = statistics.stdev(tempos) if len(tempos) > 1 else 0.0
+
+    print(f"\nMédia do tempo de execução: {media:.2f}")
+    print(f"\nDesvio padrão: {desvio:.2f}")
+
+
+#############################
+arquivo_log = input("Digite o caminho do arquivo de log: ")
+tempo_execucao(arquivo_log)
